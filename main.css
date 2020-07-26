@@ -2,13 +2,47 @@ html,
 body {
   height: 100%;
 }
+
+ul {
+  padding: 0;
+}
+.navbar li{
+  color: #5b5a5a !important;
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
+}
+li.nav-item.nav-link.active{
+  color: #5335eb !important;
+  border-bottom: 2px solid #5335eb;
+}
+li.nav-item.nav-link:hover{
+  color: #5335eb !important;
+  border-bottom: 2px solid #5335eb;
+}
 .carousel-inner img {
   width: 100%;
   height: 100%;
 }
-
-.valid-feedback.feedback-icon,
+.carousel-caption {
+  right: 0;
+  top: 20%;
+  width: 30%;
+}
+.carousel{
+  margin-bottom: 2rem;
+}
+.form-control.is-valid, .was-validated .form-control:valid{
+  border-color: #28a745;
+  padding-right: calc(1.5em + .75rem);
+  /* background-image:none !important; */
+  background-image: url("C:\xampp\htdocs\www\Darbai\registration-form\check-circle-solid.svg")!important; 
+   /* background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem); */
+}
+/* .valid-feedback.feedback-icon,
 .invalid-feedback.feedback-icon {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32px' height='32px' viewBox='0 0 363.025 363.024' style='enable-background:new 0 0 363.025 363.024;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath style='fill:%2328a745;' d='M181.512,363.024C81.43,363.024,0,281.601,0,181.513C0,81.424,81.43,0,181.512,0 c100.083,0,181.513,81.424,181.513,181.513C363.025,281.601,281.595,363.024,181.512,363.024z M181.512,11.71 C87.88,11.71,11.71,87.886,11.71,181.513s76.17,169.802,169.802,169.802c93.633,0,169.803-76.175,169.803-169.802 S275.145,11.71,181.512,11.71z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cpolygon style='fill:%2328a745;' points='147.957,258.935 83.068,194.046 91.348,185.767 147.957,242.375 271.171,119.166 279.451,127.445 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
   display: none;
   position: absolute;
   width: auto;
@@ -16,7 +50,10 @@ body {
   right: 10px;
   margin-top: 0;
 }
-
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32px' height='32px' viewBox='0 0 363.025 363.024' style='enable-background:new 0 0 363.025 363.024;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath style='fill:%2328a745;' d='M181.512,363.024C81.43,363.024,0,281.601,0,181.513C0,81.424,81.43,0,181.512,0 c100.083,0,181.513,81.424,181.513,181.513C363.025,281.601,281.595,363.024,181.512,363.024z M181.512,11.71 C87.88,11.71,11.71,87.886,11.71,181.513s76.17,169.802,169.802,169.802c93.633,0,169.803-76.175,169.803-169.802 S275.145,11.71,181.512,11.71z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Cpolygon style='fill:%2328a745;' points='147.957,258.935 83.068,194.046 91.348,185.767 147.957,242.375 271.171,119.166 279.451,127.445 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+} */
 form {
   display: flex;
   flex-direction: column;
@@ -25,8 +62,8 @@ form {
 .btn.btn-primary {
   background-color: #5335eb;
   border-radius: 30px;
-  padding: 1rem 5rem;
-  font-size: 1.8rem;
+  padding: 0.8rem 4rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .btn.btn-primary:hover {
@@ -38,16 +75,30 @@ form {
   outline: none !important;
 }
 
-label.btn.btn-outline-primary.shadow-none {
-  background-color: #ffffff;
+.wrapper_left ul {
   color: #5b5a5a;
-  border: none;
-  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  list-style: none;
+  border-bottom: 2px solid #b2b2b2;
 }
-label.btn.btn-outline-primary.shadow-none:checked {
-  background-color: #ffffff;
+.wrapper_left ul li {
+  padding-right: 2rem;
+  border-bottom: 2px solid #ffffff;
+  cursor: pointer;
+}
+.wrapper_left ul li:hover {
   color: #5335eb;
-  border: none;
-  border-radius: 0;
   border-bottom: 2px solid #3b1cd6;
+}
+.form-check input[type='checkbox'] {
+  margin: 6px -16px 0;
+}
+.form-check-label a {
+  text-decoration: underline;
+}
+.form-check-label a:hover {
+  text-decoration: none;
 }

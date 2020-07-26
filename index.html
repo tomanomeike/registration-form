@@ -32,28 +32,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     <!-- forma -->
-    <link
+    <!-- <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
       id="bootstrap-css"
     />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!------ Include the above in your HEAD tag -------->
 
-    <link
+     <!-- <link
       href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
       rel="stylesheet"
       id="bootstrap-css"
-    />
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+    /> -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-2.1.3.min.js"></script> -->
+    <!---- Include the above in your HEAD tag -------- --> 
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
           <button
             class="navbar-toggler"
             type="button"
@@ -66,23 +65,22 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-center"
+            class="collapse navbar-collapse"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Home</a>
-              <a class="nav-item nav-link" href="#">About game</a>
-              <a class="nav-item nav-link active" href="#">Register</a>
-              <a class="nav-item nav-link" href="#">Sponsors</a>
-              <a class="nav-item nav-link" href="#">Contact Us</a>
-              <a class="nav-item nav-link" href="#">Donate</a>
-            </div>
+            <ul class="container navbar-nav nav-fill w-100">
+              <li class="nav-item nav-link" href="#">Home</li>
+              <li class="nav-item nav-link" href="#">About game</li>
+              <li class="nav-item nav-link active" href="#">Register</li>
+              <li class="nav-item nav-link" href="#">Sponsors</li>
+              <li class="nav-item nav-link" href="#">Contact Us</li>
+              <li class="nav-item nav-link" href="#">Donate</li>
+            </ul>
           </div>
         </nav>
-      </div>
     </header>
     <!-- slider -->
-    <div class="container">
+
       <div id="slider" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -92,8 +90,8 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="bg.jpg" alt="Computer" width="1100" height="800" />
-            <div class="carousel-caption d-none d-md-block text-left">
-              <h3>Longer text here and here</h3>
+            <div class="carousel-caption d-none d-md-block text-left pl-0">
+              <h3>Longer text here<br> and here</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -105,7 +103,7 @@
           <div class="carousel-item">
             <img src="bg.jpg" alt="Computer" width="1100" height="800" />
             <div class="carousel-caption d-none d-md-block text-left">
-              <h3>Longer text here and here</h3>
+              <h3>Longer text here<br> and here</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -117,7 +115,7 @@
           <div class="carousel-item">
             <img src="bg.jpg" alt="Computer" width="1100" height="800" />
             <div class="carousel-caption d-none d-md-block text-left">
-              <h3>Longer text here and here</h3>
+              <h3>Longer text here<br> and here</h3>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -134,7 +132,7 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-    </div>
+  
 
     <!-- forma -->
 
@@ -231,10 +229,10 @@
         </div>
       </div>
 
-      <div class="wrapper">
+      <div class="wrapper w-50">
         <div class="wrapper_left">
           <ul>
-            <li data-li="terms" class="active">
+            <li data-li="terms"class="active">
               <p>Terms and conditions</p>
             </li>
             <li data-li="rules">
@@ -246,29 +244,23 @@
           </ul>
         </div>
 
-        <div class="wrapper_right">
-            <div class="container">
-              <div class="item terms">
-                <div class="item_info">                      
-                </div>
-                <p>Terms and conditions.</p>
+        <div class="wrapper_right">           
+              <div class="item terms ">
+                <div class="item_info h-25 ">  
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>               
               </div>
               <div class="item rules" style="display: none;">
                 <div class="item_info">
-                  <p>Rules</p>
+                  <p class="h-25">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source</p>
                 </div>
-                <p>Rules.</p>
               </div>
-              <div class="item faq" style="display: none;">
+              <div class="item faq h-250" style="display: none;">
                 <div class="item_info">
-                  <p>FaQ</p>
+                  <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                 </div>
-                <p>FAQ.</p>
-              </div>
-            </div>
-          </div>
-
-       
+              </div>        
+          </div>         
       <div class="form-group">
         <div class="form-check">
           <input
@@ -280,18 +272,21 @@
           />
           <label class="form-check-label" for="invalidCheck"
             >I AGREE with the terms and conditions. I have read them througly
-            and agree to abide by them.<a href="#">Terms of service</a></label
+            and agree to abide by them. <a href="#">Terms of service</a></label
           >
           <div class="invalid-feedback">
             You must agree before submitting.
           </div>
         </div>
       </div>
-
-      <div class="form-group">
+      <div class="form-group text-center">
         <button class="btn btn-primary" id="submitButton">REGISTER</button>
       </div>
     </form>
+    <h3 class="text-center">Kur mus rasti?</h3>
+    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.806902944566!2d25.25719191578494!3d54.69542558028381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd93f9b8f93be7%3A0xf1b5c5e29ca959b6!2sUp%C4%97s%20g.%2023%2C%20Vilnius%2008106!5e0!3m2!1sen!2slt!4v1595780287587!5m2!1sen!2slt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>

@@ -1,8 +1,5 @@
 $('#submitButton').click(function () {
-  //Fetch form to apply custom Bootstrap validation
   var form = $('#myForm');
-  //alert(form.prop('id')) //test to ensure calling form correctly
-
   if (form[0].checkValidity() === false) {
     event.preventDefault();
     event.stopPropagation();
