@@ -11,7 +11,7 @@ ul {
 .navbar li {
   font-size: 1.5em;
   color: #5b5a5a !important;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
   cursor: pointer;
 }
 li.nav-item.nav-link.active {
@@ -87,7 +87,7 @@ form {
   justify-content: space-between;
   align-content: flex-start;
   list-style: none;
-  border-bottom: 2px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
 }
 .wrapper_left ul li {
   font-size: 1.5em;
