@@ -1,4 +1,3 @@
-
 $('#submitButton').click(function () {
   var form = $('#myForm');
   if (form[0].checkValidity() === false) {
@@ -7,6 +6,25 @@ $('#submitButton').click(function () {
   }
   form.addClass('was-validated');
 });
+
+$(document).ready(function () {
+  $('.collapse.show').each(function () {
+    $(this).siblings('.card-header').find('.btn i').html('-');
+    $(this).prev('.card-header').addClass('highlight');
+  });
+  $('.collapse')
+    .on('show.bs.collapse', function () {
+      $(this).parent().find('.card-header .btn i').html('-');
+    })
+    .on('hide.bs.collapse', function () {
+      $(this).parent().find('.card-header .btn i').html('+');
+    });
+  $('.card-header .btn').click(function () {
+    $('.card-header').not($(this).parents()).removeClass('highlight');
+    $(this).parents('.card-header').toggleClass('highlight');
+  });
+});
+
 
 var li_elements = document.querySelectorAll('.wrapper_left ul li');
 var item_elements = document.querySelectorAll('.item');
@@ -31,25 +49,3 @@ for (var i = 0; i < li_elements.length; i++) {
     }
   });
 }
-$(document).ready(function () {
-  // Add minus icon for collapse element which is open by default
-  $('.collapse.show').each(function () {
-    $(this).siblings('.card-header').find('.btn i').html('-');
-    $(this).prev('.card-header').addClass('highlight');
-  });
-
-  // Toggle plus minus icon on show hide of collapse element
-  $('.collapse')
-    .on('show.bs.collapse', function () {
-      $(this).parent().find('.card-header .btn i').html('-');
-    })
-    .on('hide.bs.collapse', function () {
-      $(this).parent().find('.card-header .btn i').html('+');
-    });
-
-  // Highlight open collapsed element
-  $('.card-header .btn').click(function () {
-    $('.card-header').not($(this).parents()).removeClass('highlight');
-    $(this).parents('.card-header').toggleClass('highlight');
-  });
-});
